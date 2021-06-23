@@ -40,3 +40,9 @@ console.log(message); // throws ReferenceError
 // ------------
 
 // 2.1 var is not block scoped
+if (true) {
+    // "if" block scope
+    var count = 0;
+    console.log(count); // 0
+}
+console.log(count); // 0
